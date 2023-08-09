@@ -1,0 +1,66 @@
+Q)What is Emmet?
+Emmet is a web developers tool kit. It helps us code faster. If we give any short form for the code we are writing, the emmet abbrevation gives us the full code related to that short hand property.
+
+--------------------------------------------------------------------------------------------
+
+2)Difference between library and framework?
+Both of these are resuable codes written by someone else to solve some common problems.
+
+A library used to target specific parts of application, we can use when or where ever we need it in the application. Library is a set of objects and functions which help in solving particular problem.
+
+A framework is a blueprint or architecture using which we can develop whole application from scratch. A framework is set of libraries which covers all areas of application development.
+
+--------------------------------------------------------------------------------------------
+
+3) What is CDN? Why do we use it?
+CDN is contect delivery netwrok. CDN Caches content, in a near by distributed group of servers. It helps in loading the web pages or the content faster. We use it to improve efficiency, it caches our content in the nearst server between client and our web page, so it helps to load our content faster.
+
+--------------------------------------------------------------------------------------------
+
+4) Why is React known as React?
+React is one of the many libraries used in front end. React works on the things that performs user interaction or communication in the web page, like search bar, buttons, menu etc. This reacts on performing any operation so it is called react.
+
+--------------------------------------------------------------------------------------------
+
+
+5) What is cross origin in the script tag?
+
+Using Crossorigin in the script tag means that we are permitting our project to use the libraries or resources we are fecthing from any other domain that is present in that script tag . It is a request for a resources from another domain. It sends request in form of HTTP CORS
+
+--------------------------------------------------------------------------------------------
+
+6) What is the difference between React and ReactDOM?
+
+React is a JS library used for building core architecture or functional components of user inetrface.
+
+ReactDOM is used on top of React to render the browser webpage. It glue the React and browser DOM.
+
+--------------------------------------------------------------------------------------------
+
+7) What is the difference between react.development.js and react.production.js files via CDN ?
+In development mode we get all the development tools and debugging tools to develop and debug our application.
+
+In production mode, our code is compressed and lot of functionalties we not present to improve the performance and speed in the production mode.
+
+--------------------------------------------------------------------------------------------
+
+8) What are async and defer in script tags?
+
+When our browser starts HTML parsing and  it stops when it come across script files. It fetches script files , executes script file and the continue rest of HTML Parsing again. Here scripts are blocking rendering of html, which is not a good case.
+
+
+async: when we use async script tag, our project starts HTML parsing and parallely starts fetching script files, after fetching, it stops HTML parsing and starts executing script files. When done executing script files it starts Parsing HTML again.
+
+defer : When we use defer in scripts, our browser starts HTML Parsing and parallely fetches scripts files, but executes script files only when the entire HTML Parsing in completed.
+
+--------------------------------------------------------------------------------------------
+
+
+9) When to use async and defer?
+
+If our program has lot of script files, if the order of their execution doesnt matter we can use async .
+
+but if we have lot of script files and they are dependant on each other and their order of execution, we should use defer.
+
+
+
