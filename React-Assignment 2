@@ -1,0 +1,88 @@
+
+1) What is 'npm'?
+npm is wordls largest software repository. It has code for lot of packages,libraries or dependencies in it. npm manages these packages. Package.json is a configuration file for npm where all the dependencies of our projects are managed.
+
+
+2)What is parcel/webpack? Why do we need it?
+
+Parcel and webpack are two bundlers which we can use for bundling in our projects. Parcel builds developer biuld and production build for us. Bundler like aprcel/webpack bundles/combines ,magnifies, compresses, rephrase/re analyze/rebuilds all our files together to push for production. They have many other features like tree shaking, diagnostic, HMR etc.
+
+We need bundlers like parcel or webpack to optimize our app for production. To compress, organize our files in production by removing unnecessary or unsed files.
+
+
+
+3) What is '.parcel-cache'?
+
+It is a cache memory folder, which stores the cache memory of our projects, which helps in reloading or refreshing our browser faster. So whenever we rebuild the code it doesnt need to re-phrase and re-analyze again. The .parcel-cache folder gets generated when we execute the parcel package using %npx parcel index.html
+
+
+4)What is NPX?
+
+npx is a node package eXecute. IT is used to execute the packages or dependencies that we have installed.
+
+npm - used to install packages/dependencies
+npm - used to execute packages/dependencies
+
+
+5) What is the difference between dependencies and dev dependencies?
+
+A dependency is a library or pacakage that are needed for our project.
+DevDependencies are the packages a developer needs during development. 
+
+
+6) What is Tree Shaking?
+
+Tree shaking is one of the features of parcel bundler. Tree shaking removes the unused code while bundling the files together.
+
+
+7) What is Hot Module Replacement?
+Hot Module Replacement(HMR) is also a feature of Parcel. where the HMR reloads our browser automatically whenever there is modification or change in our project code. We dont need to refresh manully.
+
+HMR uses a File Watching Algorithm, this helps HMR know whenever theres any modification in the files and it automatically refreshes the browser page.
+
+
+8)List out any 5 favourite super powers of Parcel and describe any 3?
+5 features are - build dev/prod environment
+               - compress all our files into small code
+               - HMR
+               - creates local server and hosts our browser
+               - create .pache-cache and dist folders
+
+    description of 
+    1)build dev env/ prod env - when we execute parcel it builds the dev env and creates cache and dist folder where it has cache memory and code in the dist folder
+    when we build prod env - the dist folder gets replaced by the compressed production code files.
+    2) HMR feature using File Watching algorithm and auto freshing browswer page
+    3)Faster build by caching data in .parcel-cache folder
+
+
+
+
+9)What is .gitignore? What should we add and not add into it?
+'.gitignore' is a text file, which we have to place in our git repo. All the files/folder that are mentioned in .gitignore file , will not be pushed into our git main repo. So, whichever files we dont want in the git main repo, we should mention them in this file.
+
+We have to add all the files which can be regenrated even after deleting,to this file. so that even if theyre not pushed to git main repo. They can be generated there by git if need.
+
+We shouldn't add the main files which cannot be regenarated again. like package.json, packagae-lock.json files. Which are imp to know what are the dependencies used in our project.
+
+
+
+10)Why should I not modify "package-lock.json" file?
+
+It has all the data about the exact details of dependencies and exact version of it.  Its purpose is to store the exact installed dependency details. So we should not modify it. And it is generated automatically when we execute parcel.
+
+
+11)What is node_modules? Is it a good idea to push it to git?
+node_modules is a folder with data of all the depencies or packages of npm. It gets created when we install any package. 
+NO, it is a very large file and we should not push it into git becasue we can generate it from package.json file whenever we need it.
+
+
+12) What is 'dist' folder?
+dist folder is created when we execute parcel and it has all code of dev environment while development. 
+and when we build prod env dist will be replaced with code of all production env.
+
+13) What is browserslist?
+browserslist is a production dependencies, through which we can specify the list of different browsers and their versions that can access our project. We have to add this dependency in our package.json file.
+
+14) Why choose parcel over webpack and vite?
+They all perform well and do the bundling but i personally like Parcel, fast builds, zero configuration and ease of use.
+
